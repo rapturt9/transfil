@@ -1,0 +1,49 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "filetransfersecs3",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/send",
+            "lambdaFunction": "filetransfersecs3",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "apis3sec",
+    "apiName": "apis3sec",
+    "functionArns": [
+        {
+            "lambdaFunction": "filetransfersecs3"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-filetransfer-dev-191236-authRole",
+        "unAuthRoleName": "amplify-filetransfer-dev-191236-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "filetransfersecs3",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "a32f750a"
+}

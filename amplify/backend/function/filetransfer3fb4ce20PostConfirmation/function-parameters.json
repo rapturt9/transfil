@@ -1,0 +1,16 @@
+{
+    "trigger": true,
+    "modules": [
+        "add-to-group"
+    ],
+    "parentResource": "filetransfer3fb4ce20",
+    "functionName": "filetransfer3fb4ce20PostConfirmation",
+    "resourceName": "filetransfer3fb4ce20PostConfirmation",
+    "parentStack": "auth",
+    "triggerEnvs": [],
+    "triggerDir": "/usr/local/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/PostConfirmation",
+    "triggerTemplate": "PostConfirmation.json.ejs",
+    "roleName": "filetransfer3fb4ce20PostConfirmation",
+    "skipEdit": true,
+    "GROUP": "regular"
+}

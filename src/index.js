@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'semantic-ui-css/semantic.min.css';
+import { createBrowserHistory } from "history";
+import { Router } from "react-router-dom";
+
+const customHistory = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Router history={customHistory}>
+      <App />
+    </Router>,
   document.getElementById('root')
 );
 
